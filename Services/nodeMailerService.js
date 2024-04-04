@@ -14,7 +14,7 @@ const sendMailUsingSMTP = async (email, OTP) => {
       });
 
     const mailOptions = {
-        from: "sohaibsipra869@gmail.com"
+        from: "sohaibsipra869@gmail.com",
         to: email,
         subject: 'OTP for email verification',
         text: `Your OTP is ${OTP}`

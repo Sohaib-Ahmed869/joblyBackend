@@ -8,8 +8,8 @@ const sendMailUsingSMTP = async (email, OTP) => {
     const transporter = createTransport({
         service: 'gmail',   
         auth: {
-          user: email_Host,
-          pass: email_Password
+          user: "sohaibsipra869@gmail.com",
+          pass: "xeri feke fkog scdn"
         }
       });
 

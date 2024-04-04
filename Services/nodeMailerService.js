@@ -2,13 +2,14 @@
 
 const { createTransport } = require('nodemailer');
 const email_Host = process.env.REACT_APP_SMTP_EMAIL;
+const email_Password = process.env.REACT_APP_SMTP_PASSWORD;
 
 const sendMailUsingSMTP = async (email, OTP) => {
     const transporter = createTransport({
         service: 'gmail',   
         auth: {
-          user: "sohaibsipra869@gmail.com",
-          pass: "xeri feke fkog scdn"
+          user: email_Host,
+          pass: email_Password
         }
       });
 
